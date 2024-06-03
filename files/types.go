@@ -1,6 +1,8 @@
 package saddle_points
 
-type landscape [5][5]int
+type tuple [5]int
+
+type landscape [5]tuple
 
 type point struct {
     x, y int
@@ -17,11 +19,11 @@ func Landscape(data [25]int) (result landscape) {
     return
 }
 
-func (l landscape) Column(num int) [5]int {
+func (l landscape) Column(num int) tuple {
     return l[num]
 }
 
-func (l landscape) Row(num int) (result [5]int) {
+func (l landscape) Row(num int) (result tuple) {
     for i := 0; i < 5; i++ {
         result[i] = l[i][num]
     }
