@@ -203,5 +203,21 @@
       6,
       613919
     ]
+  },
+  {
+    "duration": 5.843328,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 13,
+    "time": [
+      2024,
+      6,
+      3,
+      9,
+      28,
+      40,
+      638392
+    ]
   }
 ]
