@@ -6,5 +6,5 @@ import (
 )
 
 func TestFind(t *testing.T) {
-    assert.Len(t, Find([25]int{}, 1))
+    assert.Len(t, Find([25]int{}), 1)
 }

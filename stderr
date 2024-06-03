@@ -1,7 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./saddle_points_test.go:9:19: not enough arguments in call to assert.Len
-	have (*testing.T, [][2]int)
-	want (assert.TestingT, interface{}, int, ...interface{})
-./saddle_points_test.go:9:35: too many arguments in call to Find
-	have ([25]int, number)
-	want ([25]int)

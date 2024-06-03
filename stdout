@@ -1,1 +1,8 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestFind (0.00s)
+    saddle_points_test.go:9: 
+        	Error Trace:	saddle_points_test.go:9
+        	Error:      	"[]" should have 1 item(s), but has 0
+        	Test:       	TestFind
+FAIL
+exit status 1
+FAIL	_/sandbox	0.007s
