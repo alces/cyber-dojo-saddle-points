@@ -15,6 +15,13 @@ func TestLandscape(t *testing.T) {
     assert.Equal(t, 6, l[0][1])
 }
 
+func TestLandscapeColumn(t *testing.T) {
+    l := Landscape(testLandscapeData)
+    r := l.Column(1)
+    
+    assert.Equal(t, 22, r[4])
+}
+
 func TestLandscapeRow(t *testing.T) {
     l := Landscape(testLandscapeData)
     r := l.Row(2)
