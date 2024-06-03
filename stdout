@@ -1,2 +1,10 @@
-PASS
-ok  	_/sandbox	0.002s
+--- FAIL: TestTupleMin (0.00s)
+    tuple_test.go:13: 
+        	Error Trace:	tuple_test.go:13
+        	Error:      	Not equal: 
+        	            	expected: 2
+        	            	actual  : 0
+        	Test:       	TestTupleMin
+FAIL
+exit status 1
+FAIL	_/sandbox	0.003s

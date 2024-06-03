@@ -13,3 +13,7 @@ func (t tuple) Max() (result int) {
     
     return
 }
+
+func (t tuple) Min() (result int) {
+    return 0
+}
