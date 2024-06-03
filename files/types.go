@@ -1,7 +1,5 @@
 package saddle_points
 
-type tuple [5]int
-
 type landscape [5]tuple
 
 type point struct {

@@ -1,2 +1,10 @@
-PASS
-ok  	_/sandbox	0.005s
+--- FAIL: TestTupleMax (0.00s)
+    tuple_test.go:9: 
+        	Error Trace:	tuple_test.go:9
+        	Error:      	Not equal: 
+        	            	expected: 5
+        	            	actual  : 0
+        	Test:       	TestTupleMax
+FAIL
+exit status 1
+FAIL	_/sandbox	0.008s
