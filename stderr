@@ -1,0 +1,4 @@
+# _/sandbox [_/sandbox.test]
+./types.go:13:22: tuple (type) is not an expression
+./types.go:14:22: tuple (type) is not an expression
+./types.go:27:25: tuple (type) is not an expression
