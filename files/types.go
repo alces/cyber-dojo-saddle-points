@@ -5,5 +5,8 @@ type point struct {
 }
 
 func Point(x, y int) point {
-    return point{}
+    return point{
+        x: x,
+        y: y,
+    }
 }
