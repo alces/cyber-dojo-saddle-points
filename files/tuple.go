@@ -15,5 +15,13 @@ func (t tuple) Max() (result int) {
 }
 
 func (t tuple) Min() (result int) {
-    return 0
+    result = t[0]
+    
+    for i := 1; i < len(t); i++ {
+        if t[i] < result {
+            result = t[i]
+        }
+    }
+    
+    return
 }
