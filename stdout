@@ -1,2 +1,11 @@
-PASS
-ok  	_/sandbox	0.004s
+--- FAIL: TestPoint (0.00s)
+    types_test.go:11: 
+        	Error Trace:	types_test.go:11
+        	Error:      	Not equal: 
+        	            	expected: 1
+        	            	actual  : 0
+        	Test:       	TestPoint
+        	Messages:   	unexpected X
+FAIL
+exit status 1
+FAIL	_/sandbox	0.003s
