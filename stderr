@@ -1,0 +1,4 @@
+# _/sandbox [_/sandbox.test]
+./tuple.go:8:9: undefined: i
+./tuple.go:9:14: undefined: i
+./tuple.go:10:24: undefined: i
