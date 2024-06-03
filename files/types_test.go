@@ -10,6 +10,7 @@ func TestLandscape(t *testing.T) {
     
     assert.Equal(t, 1, l[0][0])
     assert.Equal(t, 25, l[4][4])
+    assert.Equal(t, 6, l[0][1])
 }
 
 
