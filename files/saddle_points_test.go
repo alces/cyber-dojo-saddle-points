@@ -5,6 +5,6 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
-func Test_life_the_universe_and_everything(t *testing.T) {
-    assert.Equal(t, 42, answer())
+func TestFind(t *testing.T) {
+    assert.Size(t, 1, Find([25]int{}))
 }
