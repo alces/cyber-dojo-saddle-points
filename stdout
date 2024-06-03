@@ -3,8 +3,8 @@
         	Error Trace:	types_test.go:22
         	Error:      	Not equal: 
         	            	expected: 12
-        	            	actual  : 0
+        	            	actual  : 8
         	Test:       	TestLandscapeRow
 FAIL
 exit status 1
-FAIL	_/sandbox	0.005s
+FAIL	_/sandbox	0.002s

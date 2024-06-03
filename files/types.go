@@ -18,7 +18,7 @@ func Landscape(data [25]int) (result landscape) {
 }
 
 func (l landscape) Row(num int) [5]int {
-    return [5]int{}  
+    return l[num]
 }
 
 func Point(x, y int) point {
