@@ -2,10 +2,6 @@ package saddle_points
 
 type landscape [5]tuple
 
-type point struct {
-    x, y int
-}
-
 func Landscape(data [25]int) (result landscape) {    
     rowLen := len(result[0])
     
