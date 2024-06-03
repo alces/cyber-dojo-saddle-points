@@ -9,9 +9,11 @@ type point struct {
 }
 
 func Landscape(data [25]int) (result landscape) {    
+    rowLen := len(result[0])
+    
     for i := 0; i < len(data); i++ {
-        c := i % len(tuple)
-        r := i / len(tuple)
+        c := i % rowLen
+        r := i / rowLen
         
         result[c][r] = data[i]
     }
@@ -24,7 +26,7 @@ func (l landscape) Column(num int) tuple {
 }
 
 func (l landscape) Row(num int) (result tuple) {
-    for i := 0; i < len(tuple); i++ {
+    for i := 0; i < len(result); i++ {
         result[i] = l[i][num]
     }
     
