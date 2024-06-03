@@ -1,4 +1,4 @@
-package hiker
+package saddle_points
 
 import (
     "testing"
