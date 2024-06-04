@@ -1,2 +1,8 @@
-PASS
-ok  	_/sandbox	0.004s
+--- FAIL: TestPointSetAdd (0.00s)
+    points_test.go:20: 
+        	Error Trace:	points_test.go:20
+        	Error:      	"map[]" should have 1 item(s), but has 0
+        	Test:       	TestPointSetAdd
+FAIL
+exit status 1
+FAIL	_/sandbox	0.008s

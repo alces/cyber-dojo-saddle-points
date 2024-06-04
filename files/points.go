@@ -10,3 +10,9 @@ func Point(x, y int) point {
         y: y,
     }
 }
+
+type pointSet map[point]struct{}
+
+func (s pointSet) Add(p point) {
+    return
+}
