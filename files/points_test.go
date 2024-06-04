@@ -39,4 +39,5 @@ func TestPointSetIntersect(t *testing.T) {
     
     assert.Len(t, r, 2)
     assert.Contains(t, r, Point(1,1))
+    assert.Contains(t, r, Point(2,2))
 }
