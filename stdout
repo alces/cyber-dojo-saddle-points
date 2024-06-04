@@ -1,23 +1,2 @@
---- FAIL: TestPointSetIntersect (0.00s)
-panic: assignment to entry in nil map [recovered]
-	panic: assignment to entry in nil map
-
-goroutine 11 [running]:
-testing.tRunner.func1.2({0x5b22c0, 0x623580})
-	/usr/local/go/src/testing/testing.go:1389 +0x24e
-testing.tRunner.func1()
-	/usr/local/go/src/testing/testing.go:1392 +0x39f
-panic({0x5b22c0, 0x623580})
-	/usr/local/go/src/runtime/panic.go:838 +0x207
-_/sandbox.pointSet.Add(...)
-	/sandbox/points.go:19
-_/sandbox.pointSet.Intersect(...)
-	/sandbox/points.go:25
-_/sandbox.TestPointSetIntersect(0xc000105ba0?)
-	/sandbox/points_test.go:38 +0x2f1
-testing.tRunner(0xc000105d40, 0x5f2ed8)
-	/usr/local/go/src/testing/testing.go:1439 +0x102
-created by testing.(*T).Run
-	/usr/local/go/src/testing/testing.go:1486 +0x35f
-exit status 2
-FAIL	_/sandbox	0.005s
+PASS
+ok  	_/sandbox	0.006s
