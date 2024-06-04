@@ -8,8 +8,8 @@ type landscape [tupleSize]tuple
 
 func Landscape(data [25]int) (result landscape) {    
     for i := 0; i < tupleSize; i++ {
-        c := i % rowLen
-        r := i / rowLen
+        c := i % tupleSize
+        r := i / tupleSize
         
         result[c][r] = data[i]
     }
