@@ -25,7 +25,7 @@ func TestPointSetAdd(t *testing.T) {
 func TestPointSetIn(t *testing.T) {
     s := pointSet{}
     
-    s1.Add(Point(1,1))
+    s.Add(Point(1,1))
     
     assert.True(t, s.In(Point(1,1)))
 }

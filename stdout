@@ -1,1 +1,8 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestPointSetIn (0.00s)
+    points_test.go:30: 
+        	Error Trace:	points_test.go:30
+        	Error:      	Should be true
+        	Test:       	TestPointSetIn
+FAIL
+exit status 1
+FAIL	_/sandbox	0.006s
