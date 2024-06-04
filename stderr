@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./points.go:24:18: syntax error: cannot use _, ok := f[k] as value

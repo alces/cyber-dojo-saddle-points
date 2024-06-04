@@ -21,7 +21,7 @@ func (s pointSet) Add(p point) {
 
 func (s pointSet) Intersect(f pointSet) (result pointSet) {
     for k := range s {
-        if _, ok := f[k] {
+        if _, ok := f[k]; ok {
             result.Add(k)
         }
     }
