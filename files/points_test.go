@@ -28,6 +28,7 @@ func TestPointSetIn(t *testing.T) {
     s.Add(Point(1,1))
     
     assert.True(t, s.In(Point(1,1)), "should countain Point(1,1)")
+    assert.False(t, s.In(Point(1,2)), "should not countain Point(1,2)")
 }
     
 func TestPointSetIntersect(t *testing.T) {
