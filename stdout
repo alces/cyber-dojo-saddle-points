@@ -1,9 +1,1 @@
---- FAIL: TestPointSetIn (0.00s)
-    points_test.go:30: 
-        	Error Trace:	points_test.go:30
-        	Error:      	Should be true
-        	Test:       	TestPointSetIn
-        	Messages:   	should countain Point(1,1)
-FAIL
-exit status 1
-FAIL	_/sandbox	0.007s
+FAIL	_/sandbox [build failed]

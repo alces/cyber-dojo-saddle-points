@@ -20,7 +20,9 @@ func (s pointSet) Add(p point) {
 }
 
 func (s pointSet) In(p point) bool {
-    return false
+    _, ok := f[k]
+    
+    return ok
 }
 
 func (s pointSet) Intersect(f pointSet) pointSet {
