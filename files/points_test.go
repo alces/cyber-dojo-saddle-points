@@ -60,4 +60,5 @@ func TestPointSetToSlice(t *testing.T) {
     r := s.ToSlice()
     
     assert.Len(t, r, 2)
+    assert.Contains(t, r, Point(1,1))
 }    
