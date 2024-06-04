@@ -22,4 +22,5 @@ func TestFind(t *testing.T) {
     
     assert.Len(t, r, 2)
     assert.Contains(t, r, Point(3, 1))
+    assert.Contains(t, r, Point(3, 3))
 }
