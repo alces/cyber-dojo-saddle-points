@@ -1,0 +1,2 @@
+# _/sandbox [_/sandbox.test]
+./points_test.go:28:5: undefined: s1

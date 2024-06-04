@@ -22,6 +22,14 @@ func TestPointSetAdd(t *testing.T) {
     assert.Len(t, s, 1)
 }
 
+func TestPointSetIn(t *testing.T) {
+    s := pointSet{}
+    
+    s1.Add(Point(1,1))
+    
+    assert.True(t, s.In(Point(1,1)))
+}
+    
 func TestPointSetIntersect(t *testing.T) {
     s1 := pointSet{}
     s2 := pointSet{}

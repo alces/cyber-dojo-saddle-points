@@ -19,6 +19,10 @@ func (s pointSet) Add(p point) {
     s[p] = value
 }
 
+func (s pointSet) In(p point) bool {
+    return false
+}
+
 func (s pointSet) Intersect(f pointSet) pointSet {
     result := pointSet{}
     
