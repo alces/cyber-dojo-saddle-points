@@ -6,5 +6,7 @@ import (
 )
 
 func TestFind(t *testing.T) {
-    assert.Len(t, Find(Landscape([25]int{})), 25)
+    flat := Landscape([25]int{})
+    
+    assert.Len(t, Find(flat), 25)
 }
