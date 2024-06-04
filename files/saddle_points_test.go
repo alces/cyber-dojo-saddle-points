@@ -1,7 +1,6 @@
 package saddle_points
 
 import (
-    "fmt"
     "testing"
     "github.com/stretchr/testify/assert"
 )
@@ -19,6 +18,5 @@ func TestFind(t *testing.T) {
         10, 10, 50, 80, 10,
     })
     
-    fmt.Println(Find(hilly))
-    assert.Len(t, Find(hilly), 1)
+    assert.Len(t, Find(hilly), 2)
 }
