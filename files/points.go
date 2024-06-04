@@ -20,7 +20,7 @@ func (s pointSet) Add(p point) {
 }
 
 func (s pointSet) In(p point) bool {
-    _, ok := f[k]
+    _, ok := s[p]
     
     return ok
 }
