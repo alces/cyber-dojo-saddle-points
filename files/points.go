@@ -29,7 +29,7 @@ func (s pointSet) Intersect(f pointSet) pointSet {
     result := pointSet{}
     
     for k := range s {
-        if _, ok := f[k]; ok {
+        if f.In(k) {
             result.Add(k)
         }
     }
