@@ -18,5 +18,8 @@ func TestFind(t *testing.T) {
         10, 10, 50, 80, 10,
     })
     
-    assert.Len(t, Find(hilly), 2)
+    r := Find(hilly)
+    
+    assert.Len(t, r, 2)
+    assert.Contains(t, r, Point(3, 1))
 }
