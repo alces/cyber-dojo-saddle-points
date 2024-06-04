@@ -15,6 +15,8 @@ func TestPoint(t *testing.T) {
 func TestPointSetAdd(t *testing.T) {
     s := pointSet{}
     
+    assert.Len(t, s, 0)
+    
     s.Add(Point(1, 2))
 
     assert.Len(t, s, 1)
