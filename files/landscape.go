@@ -7,7 +7,7 @@ const (
 type landscape [tupleSize]tuple
 
 func Landscape(data [25]int) (result landscape) {    
-    for i := 0; i < tupleSize; i++ {
+    for i := 0; i < len(data); i++ {
         c := i % tupleSize
         r := i / tupleSize
         
