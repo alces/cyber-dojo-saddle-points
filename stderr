@@ -1,0 +1,12 @@
+# _/sandbox [_/sandbox.test]
+./saddle_points.go:7:9: undefined: i
+./saddle_points.go:8:28: undefined: i
+./saddle_points.go:10:13: undefined: j
+./saddle_points.go:11:21: undefined: j
+./saddle_points.go:11:24: undefined: i
+./saddle_points.go:12:36: undefined: j
+./saddle_points.go:12:39: undefined: i
+./saddle_points.go:16:31: undefined: i
+./saddle_points.go:18:13: undefined: j
+./saddle_points.go:19:21: undefined: i
+./saddle_points.go:19:21: too many errors

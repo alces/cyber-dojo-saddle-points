@@ -891,5 +891,21 @@
       39,
       552642
     ]
+  },
+  {
+    "duration": 5.857334,
+    "colour": "amber",
+    "predicted": "amber",
+    "revert_if_wrong": "off",
+    "index": 56,
+    "time": [
+      2024,
+      6,
+      4,
+      9,
+      32,
+      31,
+      992941
+    ]
   }
 ]
