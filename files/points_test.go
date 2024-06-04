@@ -35,7 +35,7 @@ func TestPointSetIntersect(t *testing.T) {
     s2.Add(Point(2,2))
     s2.Add(Point(3,1))
     
-    r := s1.Interset(s2)
+    r := s1.Intersect(s2)
     
     assert.Len(t, r, 2)
 }
