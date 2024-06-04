@@ -1,8 +1,2 @@
---- FAIL: TestPointSetToSlice (0.00s)
-    points_test.go:62: 
-        	Error Trace:	points_test.go:62
-        	Error:      	"[]" should have 2 item(s), but has 0
-        	Test:       	TestPointSetToSlice
-FAIL
-exit status 1
-FAIL	_/sandbox	0.007s
+PASS
+ok  	_/sandbox	0.002s

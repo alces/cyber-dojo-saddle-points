@@ -38,5 +38,11 @@ func (s pointSet) Intersect(f pointSet) pointSet {
 }
 
 func (s pointSet) ToSlice() []point {
-    return []point{}
+    result := make([]point, 0, len(s))
+    
+    for k := range s {
+        result = append(result, k)
+    }
+    
+    return result
 }
