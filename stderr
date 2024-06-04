@@ -1,0 +1,2 @@
+# _/sandbox [_/sandbox.test]
+./points_test.go:38:13: s1.Interset undefined (type pointSet has no field or method Interset)

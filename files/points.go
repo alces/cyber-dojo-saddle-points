@@ -18,3 +18,7 @@ func (s pointSet) Add(p point) {
     
     s[p] = value
 }
+
+func (s pointSet) Intersect(f pointSet) pointSet {
+    return pointSet{}
+}

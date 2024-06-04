@@ -20,4 +20,22 @@ func TestPointSetAdd(t *testing.T) {
     s.Add(Point(1, 2))
 
     assert.Len(t, s, 1)
-}    
+}
+
+func TestPointSetIntersect(t *testing.T) {
+    s1 := pointSet{}
+    s2 := pointSet{}
+    
+    s1.Add(Point(1,1))
+    s1.Add(Point(1,5))
+    s1.Add(Point(2,2))
+    s1.Add(Point(3,3))
+    
+    s2.Add(Point(1,1))
+    s2.Add(Point(2,2))
+    s2.Add(Point(3,1))
+    
+    r := s1.Interset(s2)
+    
+    assert.Len(t, r, 2)
+}
