@@ -1,6 +1,10 @@
 package saddle_points
 
-type landscape [5]tuple
+const (
+    tupleSize = 5
+)
+
+type landscape [tupleSize]tuple
 
 func Landscape(data [25]int) (result landscape) {    
     rowLen := len(result[0])
