@@ -14,5 +14,7 @@ func Point(x, y int) point {
 type pointSet map[point]struct{}
 
 func (s pointSet) Add(p point) {
-    return
+    var value struct{}
+    
+    s[p] = value
 }
