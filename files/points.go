@@ -36,3 +36,7 @@ func (s pointSet) Intersect(f pointSet) pointSet {
     
     return result
 }
+
+func (s pointSet) ToSlice() []point {
+    return []point{}
+}

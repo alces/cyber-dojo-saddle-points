@@ -50,3 +50,14 @@ func TestPointSetIntersect(t *testing.T) {
     assert.Contains(t, r, Point(1,1))
     assert.Contains(t, r, Point(2,2))
 }
+
+func TestPointSetToSlice(t *testing.T) {
+    s := pointSet{}
+    
+    s.Add(Point(1,1))
+    s.Add(Point(3,3))
+    
+    r := s.ToSlice()
+    
+    assert.Len(t, r, 2)
+}    
