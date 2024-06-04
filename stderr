@@ -1,0 +1,3 @@
+# _/sandbox [_/sandbox.test]
+./landscape.go:11:18: undefined: rowLen
+./landscape.go:12:18: undefined: rowLen
