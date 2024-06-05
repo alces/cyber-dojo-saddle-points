@@ -2,7 +2,7 @@ package saddle_points
 
 type tuple [tupleSize]int
 
-func (t tuple) Max() (result int) {
+func (t tuple) max() (result int) {
     result = t[0]
     
     for i := 1; i < tupleSize; i++ {
@@ -14,7 +14,7 @@ func (t tuple) Max() (result int) {
     return
 }
 
-func (t tuple) Min() (result int) {
+func (t tuple) min() (result int) {
     result = t[0]
     
     for i := 1; i < tupleSize; i++ {
