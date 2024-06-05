@@ -6,11 +6,11 @@ import (
 )
 
 func TestFind(t *testing.T) {
-    flat := Landscape([25]int{})
+    flat := MakeLandscape([25]int{})
     
     assert.Len(t, Find(flat), 25)
     
-    hilly := Landscape([25]int{
+    hilly := MakeLandscape([25]int{
         10, 10, 50, 80, 10,
         10, 30, 60, 70, 10,
         10, 20, 40, 90, 10,
@@ -21,6 +21,6 @@ func TestFind(t *testing.T) {
     r := Find(hilly)
     
     assert.Len(t, r, 2)
-    assert.Contains(t, r, Point(3, 1))
-    assert.Contains(t, r, Point(3, 3))
+    assert.Contains(t, r, point(3, 1))
+    assert.Contains(t, r, point(3, 3))
 }

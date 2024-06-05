@@ -1,25 +1,25 @@
 package saddle_points
 
-type point struct {
-    x, y int
+type Point struct {
+    X, Y int
 }
 
-func Point(x, y int) point {
-    return point{
-        x: x,
-        y: y,
+func point(x, y int) point {
+    return Point{
+        X: x,
+        Y: y,
     }
 }
 
-type pointSet map[point]struct{}
+type pointSet map[Point]struct{}
 
-func (s pointSet) Add(p point) {
+func (s pointSet) Add(p Point) {
     var value struct{}
     
     s[p] = value
 }
 
-func (s pointSet) In(p point) bool {
+func (s pointSet) In(p Point) bool {
     _, ok := s[p]
     
     return ok
@@ -37,8 +37,8 @@ func (s pointSet) Intersect(f pointSet) pointSet {
     return result
 }
 
-func (s pointSet) ToSlice() []point {
-    result := make([]point, 0, len(s))
+func (s pointSet) ToSlice() []Point {
+    result := make([]Point, 0, len(s))
     
     for k := range s {
         result = append(result, k)

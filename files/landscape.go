@@ -6,7 +6,7 @@ const (
 
 type landscape [tupleSize]tuple
 
-func Landscape(data [25]int) (result landscape) {    
+func MakeLandscape(data [25]int) (result Landscape) {    
     for i := 0; i < len(data); i++ {
         c := i % tupleSize
         r := i / tupleSize
@@ -17,11 +17,11 @@ func Landscape(data [25]int) (result landscape) {
     return
 }
 
-func (l landscape) Column(num int) tuple {
+func (l Landscape) Column(num int) tuple {
     return l[num]
 }
 
-func (l landscape) Row(num int) (result tuple) {
+func (l Landscape) Row(num int) (result tuple) {
     for i := 0; i < tupleSize; i++ {
         result[i] = l[i][num]
     }

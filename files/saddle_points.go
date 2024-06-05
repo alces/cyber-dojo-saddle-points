@@ -1,6 +1,6 @@
 package saddle_points
 
-func Find(data landscape) (result []point) {
+func Find(data Landscape) (result []Point) {
     hightest := pointSet{}
     lowest := pointSet{}
     
@@ -9,7 +9,7 @@ func Find(data landscape) (result []point) {
         
         for j := 0; j < tupleSize; j++ {
             if data[j][i] == rowMax {
-                hightest.Add(Point(j, i))
+                hightest.Add(point(j, i))
             }
         }
 
@@ -17,7 +17,7 @@ func Find(data landscape) (result []point) {
         
         for j := 0; j < tupleSize; j++ {
             if data[i][j] == colMin {
-                lowest.Add(Point(i, j))
+                lowest.Add(point(i, j))
             }
         }
     }
