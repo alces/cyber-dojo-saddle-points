@@ -22,7 +22,19 @@ func (l Landscape) column(num int) tuple {
 }
 
 func (l Landscape) columnLowestPoints() pointSet {
-    return pointSet{}
+    result := pointSet{}
+    
+    for i := 0; i < tupleSize; i++ {
+        columnMin := l.column(i).min()
+        
+        for j := 0; j < tupleSize; j++ {
+            if l[i][j] == columnMin {
+                result.add(point(i, j))
+            }
+        }
+    }
+    
+    return result
 }
     
 func (l Landscape) row(num int) (result tuple) {

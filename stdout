@@ -1,8 +1,2 @@
---- FAIL: TestLandscapeColumnLowestPoints (0.00s)
-    landscape_test.go:29: 
-        	Error Trace:	landscape_test.go:29
-        	Error:      	"map[]" should have 5 item(s), but has 0
-        	Test:       	TestLandscapeColumnLowestPoints
-FAIL
-exit status 1
-FAIL	_/sandbox	0.007s
+PASS
+ok  	_/sandbox	0.003s
