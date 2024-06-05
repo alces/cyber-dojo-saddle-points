@@ -4,7 +4,7 @@ type Point struct {
     X, Y int
 }
 
-func point(x, y int) point {
+func point(x, y int) Point {
     return Point{
         X: x,
         Y: y,
