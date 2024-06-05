@@ -27,6 +27,7 @@ func TestLandscapeColumnLowestPoints(t *testing.T) {
     cl := l.columnLowestPoints()
     
     assert.Len(t, cl, 5)
+    assert.Contains(t, cl, point(0, 0))
 }
 
 func TestLandscapeRow(t *testing.T) {
