@@ -17,11 +17,11 @@ func MakeLandscape(data [25]int) (result Landscape) {
     return
 }
 
-func (l Landscape) Column(num int) tuple {
+func (l Landscape) column(num int) tuple {
     return l[num]
 }
 
-func (l Landscape) Row(num int) (result tuple) {
+func (l Landscape) row(num int) (result tuple) {
     for i := 0; i < tupleSize; i++ {
         result[i] = l[i][num]
     }

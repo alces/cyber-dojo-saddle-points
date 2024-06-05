@@ -17,14 +17,14 @@ func TestLandscape(t *testing.T) {
 
 func TestLandscapeColumn(t *testing.T) {
     l := MakeLandscape(testLandscapeData)
-    r := l.Column(1)
+    r := l.column(1)
     
     assert.Equal(t, 22, r[4])
 }
 
 func TestLandscapeRow(t *testing.T) {
     l := MakeLandscape(testLandscapeData)
-    r := l.Row(2)
+    r := l.row(2)
     
     assert.Equal(t, 12, r[1])
 }

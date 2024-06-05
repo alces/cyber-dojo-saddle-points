@@ -5,7 +5,7 @@ func Find(data Landscape) (result []Point) {
     lowest := pointSet{}
     
     for i := 0; i < tupleSize; i++ {
-        rowMax := data.Row(i).Max()
+        rowMax := data.row(i).Max()
         
         for j := 0; j < tupleSize; j++ {
             if data[j][i] == rowMax {
@@ -13,7 +13,7 @@ func Find(data Landscape) (result []Point) {
             }
         }
 
-        colMin := data.Column(i).Min()
+        colMin := data.column(i).Min()
         
         for j := 0; j < tupleSize; j++ {
             if data[i][j] == colMin {
