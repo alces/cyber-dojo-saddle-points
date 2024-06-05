@@ -9,7 +9,7 @@ func Find(data Landscape) (result []Point) {
         
         for j := 0; j < tupleSize; j++ {
             if data[j][i] == rowMax {
-                hightest.Add(point(j, i))
+                hightest.add(point(j, i))
             }
         }
 
@@ -17,10 +17,10 @@ func Find(data Landscape) (result []Point) {
         
         for j := 0; j < tupleSize; j++ {
             if data[i][j] == colMin {
-                lowest.Add(point(i, j))
+                lowest.add(point(i, j))
             }
         }
     }
     
-    return hightest.Intersect(lowest).ToSlice()
+    return hightest.intersect(lowest).toSlice()
 }

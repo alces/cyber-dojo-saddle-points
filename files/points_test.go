@@ -21,7 +21,7 @@ func TestPointSetAdd(t *testing.T) {
     
     assert.Len(t, s, 0)
     
-    s.Add(point(1, 2))
+    s.add(point(1, 2))
 
     assert.Len(t, s, 1)
 }
@@ -29,7 +29,7 @@ func TestPointSetAdd(t *testing.T) {
 func TestPointSetIn(t *testing.T) {
     s := pointSet{}
     
-    s.Add(point(1,1))
+    s.add(point(1,1))
     
     assert.True(t, s.In(point(1,1)), "should countain Point(1,1)")
     assert.False(t, s.In(point(1,2)), "should not countain Point(1,2)")
@@ -39,16 +39,16 @@ func TestPointSetIntersect(t *testing.T) {
     s1 := pointSet{}
     s2 := pointSet{}
     
-    s1.Add(point(1,1))
-    s1.Add(point(1,5))
-    s1.Add(point(2,2))
-    s1.Add(point(3,3))
+    s1.add(point(1,1))
+    s1.add(point(1,5))
+    s1.add(point(2,2))
+    s1.add(point(3,3))
     
-    s2.Add(point(1,1))
-    s2.Add(point(2,2))
-    s2.Add(point(3,1))
+    s2.add(point(1,1))
+    s2.add(point(2,2))
+    s2.add(point(3,1))
     
-    r := s1.Intersect(s2)
+    r := s1.intersect(s2)
     
     assert.Len(t, r, 2)
     assert.Contains(t, r, point(1,1))
@@ -61,7 +61,7 @@ func TestPointSetToSlice(t *testing.T) {
     s.Add(point(1,1))
     s.Add(point(3,3))
     
-    r := s.ToSlice()
+    r := s.toSlice()
     
     assert.Len(t, r, 2)
     assert.Contains(t, r, point(1,1))

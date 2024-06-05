@@ -21,19 +21,19 @@ func (p Point) String() string {
 
 type pointSet map[Point]struct{}
 
-func (s pointSet) Add(p Point) {
+func (s pointSet) add(p Point) {
     var value struct{}
     
     s[p] = value
 }
 
-func (s pointSet) In(p Point) bool {
+func (s pointSet) in(p Point) bool {
     _, ok := s[p]
     
     return ok
 }
 
-func (s pointSet) Intersect(f pointSet) pointSet {
+func (s pointSet) intersect(f pointSet) pointSet {
     result := pointSet{}
     
     for k := range s {
@@ -45,7 +45,7 @@ func (s pointSet) Intersect(f pointSet) pointSet {
     return result
 }
 
-func (s pointSet) ToSlice() []Point {
+func (s pointSet) toSlice() []Point {
     result := make([]Point, 0, len(s))
     
     for k := range s {

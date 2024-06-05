@@ -1,0 +1,7 @@
+# _/sandbox [_/sandbox.test]
+./points.go:40:14: f.In undefined (type pointSet has no field or method In, but does have in)
+./points.go:41:20: result.Add undefined (type pointSet has no field or method Add, but does have add)
+./points_test.go:34:22: s.In undefined (type pointSet has no field or method In, but does have in)
+./points_test.go:35:23: s.In undefined (type pointSet has no field or method In, but does have in)
+./points_test.go:61:7: s.Add undefined (type pointSet has no field or method Add, but does have add)
+./points_test.go:62:7: s.Add undefined (type pointSet has no field or method Add, but does have add)
