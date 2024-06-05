@@ -22,7 +22,7 @@ func (l Landscape) column(num int) tuple {
 }
 
 func (l Landscape) columnLowestPoints() pointSet {
-    retun pointSet{}
+    return pointSet{}
 }
     
 func (l Landscape) row(num int) (result tuple) {

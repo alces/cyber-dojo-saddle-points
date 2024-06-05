@@ -1,3 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./landscape.go:25:11: syntax error: unexpected pointSet at end of statement
-./landscape.go:26:1: syntax error: non-declaration statement outside function body
