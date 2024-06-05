@@ -4,7 +4,7 @@ const (
     tupleSize = 5
 )
 
-type landscape [tupleSize]tuple
+type Landscape [tupleSize]tuple
 
 func MakeLandscape(data [25]int) (result Landscape) {    
     for i := 0; i < len(data); i++ {

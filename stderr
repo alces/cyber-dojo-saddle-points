@@ -1,6 +1,2 @@
 # _/sandbox [_/sandbox.test]
-./landscape.go:9:42: undefined: Landscape
-./landscape.go:20:9: undefined: Landscape
-./landscape.go:24:9: undefined: Landscape
 ./points.go:7:22: point (value of type func()) is not a type
-./saddle_points.go:3:16: undefined: Landscape
