@@ -1,5 +1,9 @@
 package saddle_points
 
+import (
+    "fmt"
+)
+
 type Point struct {
     X, Y int
 }
@@ -12,7 +16,7 @@ func point(x, y int) Point {
 }
 
 func (p Point) String() string {
-    return ""
+    return fmt.Sprintf("(x:%d, y:%d)", p.X, p.Y)
 }
 
 type pointSet map[Point]struct{}
