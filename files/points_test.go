@@ -12,6 +12,10 @@ func TestPoint(t *testing.T) {
     assert.Equal(t, 2, p.Y, "unexpected Y")
 }
 
+func TestPointString(t *testing.T) {
+    assert.Equal(t, "(x:1, y:2)", point(1, 2).String())
+}
+
 func TestPointSetAdd(t *testing.T) {
     s := pointSet{}
     

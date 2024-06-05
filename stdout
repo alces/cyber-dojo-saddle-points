@@ -1,2 +1,17 @@
-PASS
-ok  	_/sandbox	0.007s
+--- FAIL: TestPointString (0.00s)
+    points_test.go:16: 
+        	Error Trace:	points_test.go:16
+        	Error:      	Not equal: 
+        	            	expected: "(x:1, y:2)"
+        	            	actual  : ""
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1 +1 @@
+        	            	-(x:1, y:2)
+        	            	+
+        	Test:       	TestPointString
+FAIL
+exit status 1
+FAIL	_/sandbox	0.005s
