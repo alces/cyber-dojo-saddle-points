@@ -21,6 +21,10 @@ func (l Landscape) column(num int) tuple {
     return l[num]
 }
 
+func (l Landscape) columnLowestPoints() pointSet {
+    retun pointSet{}
+}
+    
 func (l Landscape) row(num int) (result tuple) {
     for i := 0; i < tupleSize; i++ {
         result[i] = l[i][num]

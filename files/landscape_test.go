@@ -22,6 +22,13 @@ func TestLandscapeColumn(t *testing.T) {
     assert.Equal(t, 22, r[4])
 }
 
+func TestLandscapeColumnLowestPoints(t *testing.T) {
+    l := MakeLandscape(testLandscapeData)
+    cl := l.columnLowestPoints()
+    
+    assert.Len(t, cl, 5)
+}
+
 func TestLandscapeRow(t *testing.T) {
     l := MakeLandscape(testLandscapeData)
     r := l.row(2)

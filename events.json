@@ -1403,5 +1403,21 @@
       42,
       614689
     ]
+  },
+  {
+    "duration": 6.742459,
+    "colour": "amber",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 88,
+    "time": [
+      2024,
+      6,
+      5,
+      9,
+      30,
+      27,
+      826305
+    ]
   }
 ]
