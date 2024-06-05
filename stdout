@@ -1,1 +1,8 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestLandscapeRowHighestPoints (0.00s)
+    landscape_test.go:36: 
+        	Error Trace:	landscape_test.go:36
+        	Error:      	[]saddle_points.Point{} does not contain saddle_points.Point{X:4, Y:0}
+        	Test:       	TestLandscapeRowHighestPoints
+FAIL
+exit status 1
+FAIL	_/sandbox	0.007s

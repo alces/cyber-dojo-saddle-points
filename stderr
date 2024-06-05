@@ -1,4 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./landscape_test.go:34:11: not enough arguments in call to l.rowHighestPoints
-	have ()
-	want (int)

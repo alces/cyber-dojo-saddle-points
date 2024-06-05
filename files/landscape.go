@@ -30,6 +30,6 @@ func (l Landscape) row(num int) (result tuple) {
 }
 
 
-func (l Landscape) rowHighestPoints(num int) []Point {
+func (l Landscape) rowHighestPoints() []Point {
     return []Point{}
 }
