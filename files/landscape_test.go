@@ -33,5 +33,6 @@ func TestLandscapeRowHighestPoints(t *testing.T) {
     l := MakeLandscape(testLandscapeData)
     rh := l.rowHighestPoints()
     
+    assert.Len(t, rh, 5)
     assert.Contains(t, rh, point(4, 0))
 }
