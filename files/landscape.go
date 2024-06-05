@@ -42,4 +42,6 @@ func (l Landscape) rowHighestPoints() pointSet {
             }
         }
     }
+    
+    return result
 }
