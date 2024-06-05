@@ -31,8 +31,8 @@ func TestPointSetIn(t *testing.T) {
     
     s.add(point(1,1))
     
-    assert.True(t, s.In(point(1,1)), "should countain Point(1,1)")
-    assert.False(t, s.In(point(1,2)), "should not countain Point(1,2)")
+    assert.True(t, s.in(point(1,1)), "should countain Point(1,1)")
+    assert.False(t, s.in(point(1,2)), "should not countain Point(1,2)")
 }
     
 func TestPointSetIntersect(t *testing.T) {
@@ -58,8 +58,8 @@ func TestPointSetIntersect(t *testing.T) {
 func TestPointSetToSlice(t *testing.T) {
     s := pointSet{}
     
-    s.Add(point(1,1))
-    s.Add(point(3,3))
+    s.add(point(1,1))
+    s.add(point(3,3))
     
     r := s.toSlice()
     

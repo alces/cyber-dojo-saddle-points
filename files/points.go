@@ -37,8 +37,8 @@ func (s pointSet) intersect(f pointSet) pointSet {
     result := pointSet{}
     
     for k := range s {
-        if f.In(k) {
-            result.Add(k)
+        if f.in(k) {
+            result.add(k)
         }
     }
     
